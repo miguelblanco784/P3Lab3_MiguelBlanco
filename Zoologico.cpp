@@ -1,7 +1,6 @@
 #include<iostream>
 #include<iomanip> 
 #include <string.h>
-#include "Computadora.cpp"
 #include <vector>
 #include <bits/stdc++.h>
 
