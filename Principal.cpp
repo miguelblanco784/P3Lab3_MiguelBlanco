@@ -1,5 +1,4 @@
 #include "Zoologico.cpp"
-#include "Animales.cpp"
 
 using namespace std;
 
@@ -10,6 +9,7 @@ int main(){
 	while(true){
 		int opcion;
 		cout<<"1- Agregar Animales\n2- Mover los Animales al zoologico\n3- Listar\n0- Salir";
+		cin>>opcion;
 		switch(opcion){
 			case 1:{
 				int opcion2;
@@ -103,7 +103,18 @@ int main(){
 				break;
 			}
 			case 2:{
-				
+				for(int i = 0; i < animalesenespera.size();i++){
+					if(animalesenespera.at(i)->getTipo()=="Zona Antartica"){
+						zologico->setZonaantartica(animalesenespera.at(i));
+					}else if(animalesenespera.at(i)->getTipo()=="Zona Desertica"){
+						zologico->setZonadesertica(animalesenespera.at(i));
+					}else if(animalesenespera.at(i)->getTipo()=="Zona de Jungla"){
+						zologico->setZonajunglatropical(animalesenespera.at(i));
+					}else if(animalesenespera.at(i)->getTipo()=="Zona Sabana"){
+						zologico->setZonasabana(animalesenespera.at(i));
+					}
+				}
+				animalesenespera.clear();
 				break;
 			}
 			case 3:{
