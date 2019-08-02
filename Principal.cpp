@@ -67,6 +67,7 @@ int main(){
 				cout<<"Tiene cola\n1- Verdadero\n2- Falso\n";
 				int opcion3;
 				bool cola;
+				cin>>opcion3;
 				switch(opcion3){
 					case 1:{
 						cola = true;
@@ -89,6 +90,7 @@ int main(){
 				cout<<"Su cola es peluda\n1- Verdadero\n2- Falso\n";
 				int opcion4;
 				bool peluda;
+				cin>>opcion4;
 				switch(opcion4){
 					case 1:{
 						peluda = true;

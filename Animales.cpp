@@ -117,7 +117,7 @@ class Animales{
 	    }
 		
 		void print(){
-			cout<<nombreespecie<<"   "<<nombreanimal<<"   "<<tam;
+			cout<<nombreespecie<<"   "<<nombreanimal<<"   "<<tam<<endl;
 		}
 };
 #endif

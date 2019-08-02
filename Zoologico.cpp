@@ -70,16 +70,16 @@ class Zoologico{
 	    void print(){
 	    	cout<<nombre<<"\nCapacidad "<<capacidadpersonas<<"\nTamaño: "<<tam<<endl;
 	    	for(int i = 0; i < zonaantartica.size();i++){
-				cout<<zonaantartica.at(i)->print();
+				zonaantartica[i]->print();
 			}
 			for(int i = 0; i < zonadejunglatropical.size();i++){
-				cout<<zonadejunglatropical.at(i);
+				zonadejunglatropical.at(i)->print();
 			}
 			for(int i = 0; i < zonadesertica.size();i++){
-				cout<<zonadesertica.at(i);
+				zonadesertica.at(i)->print();
 			}
 			for(int i = 0; i < zonasabana.size();i++){
-				cout<<zonasabana.at(i);
+				zonasabana.at(i)->print();
 			}
 		}
 };
