@@ -115,6 +115,10 @@ class Animales{
 	    void setCola(Cola* cola) {
 	        this->cola = cola;
 	    }
+		
+		void print(){
+			cout<<nombreespecie<<"   "<<nombreanimal<<"   "<<tam;
+		}
 };
 #endif
 

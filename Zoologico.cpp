@@ -50,6 +50,22 @@ class Zoologico{
 	    void setCapacidadpersonas(int capacidadpersonas) {
 	        this->capacidadpersonas = capacidadpersonas;
 	    }
+	    
+	    void print(){
+	    	cout<<nombre<<"\nCapacidad "<<capacidadpersonas<<"\nTamaño"<<tam<<endl;
+	    	for(int i = 0; i < zonaantartica.size();i++){
+				cout<<zonaantartica.at(i);
+			}
+			for(int i = 0; i < zonadejunglatropical.size();i++){
+				cout<<zonadejunglatropical.at(i);
+			}
+			for(int i = 0; i < zonadesertica.size();i++){
+				cout<<zonadesertica.at(i);
+			}
+			for(int i = 0; i < zonasabana.size();i++){
+				cout<<zonasabana.at(i);
+			}
+		}
 };
 #endif
 

@@ -6,7 +6,7 @@ using namespace std;
 int main(){
 	vector<Animales*> animalesenespera;
 	Zoologico* zologico;
-	zologico = new Zoologico();
+	zologico = new Zoologico("Manrique's'",1000,100000);
 	while(true){
 		int opcion;
 		cout<<"1- Agregar Animales\n2- Mover los Animales al zoologico\n3- Listar\n0- Salir";
@@ -80,6 +80,26 @@ int main(){
 				int tamoreja;
 				cout<<"Tamaño oreja: ";
 				cin>>tamoreja;
+				int capaudicion;
+				cout<<"Ingrese la capacidad auditiva: ";
+				cin>>capaudicion;
+				double largocola;
+				cout<<"Ingrese el largo su cola: ";
+				cin>>largocola;
+				cout<<"Su cola es peluda\n1- Verdadero\n2- Falso\n";
+				int opcion4;
+				bool peluda;
+				switch(opcion4){
+					case 1:{
+						peluda = true;
+						break;
+					}
+					case 2:{
+						peluda = false;
+						break;
+					}
+				}
+				animalesenespera.push_back(new Animales(nombreespecie, nombreanimal, tamanimal, tipo, new Patas(cantpatas, largopatas, tipodepatas), new Pelaje(color1, grosor, largo),new Ojos(color2,cola),new Orejas(tamoreja, capaudicion), new Cola(largocola,peluda)));
 				break;
 			}
 			case 2:{
@@ -87,7 +107,7 @@ int main(){
 				break;
 			}
 			case 3:{
-				
+				zologico->print();
 				break;
 			}
 			case 0:{
